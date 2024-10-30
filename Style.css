@@ -1,0 +1,154 @@
+﻿@font-face {
+    font-family: 'Commodore 64 Angled';
+    src: url('css/font/Commodore 64 Angled.ttf') format('truetype');
+    font-family: 'Seagram tfb';
+    src: url('css/font/Seagram tfb.ttf') format('truetype');
+}
+audio {
+    width: 300px; /* Set a custom width */
+    height: 30px; /* You can set a custom height, but it's not fully supported across browsers */
+}
+img {
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+body {
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, hsl(345deg 80% 4%) 0%, hsl(344deg 76% 5%) 8%, hsl(344deg 74% 6%) 17%, hsl(344deg 71% 7%) 25%, hsl(344deg 69% 8%) 33%, hsl(345deg 67% 8%) 42%, hsl(345deg 67% 9%) 50%, hsl(345deg 68% 10%) 58%, hsl(346deg 70% 11%) 67%, hsl(345deg 73% 11%) 75%, hsl(345deg 77% 12%) 83%, hsl(345deg 81% 12%) 92%, hsl(345deg 85% 13%) 100%);
+    background-color: #a5013f;
+    margin: 0;
+}
+header {
+    width: 100vw; /* Ensures header takes up full viewport width */
+    margin: 0;
+    padding: 0;
+}
+.CopeBlock {
+    flex-grow: 0.5; /* Allow this block to grow and take up available space */
+    height: 1px; /* Minimal height */
+    visibility: hidden; /* Keep it invisible */
+}
+.NameHead {
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+    .NameHead {
+        height: 60px;
+    }
+}
+
+.NameHead img {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .NameHead img {
+        width: 50px;
+    }
+}
+
+.NameHead p {
+    font-family: 'Commodore 64 Angled';
+    margin: 0;
+    font-size: 50px;
+    text-align: right;
+    color: rgb(253, 254, 254);
+}
+
+@media (max-width: 768px) {
+    .NameHead p {
+        font-size: 30px;
+    }
+}
+@media (max-width: 262px) {
+    .NameHead p {
+        display: none;
+    }
+}
+.Titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Titles p {
+    color: rgb(253, 254, 254);
+    font-size: 50px;
+}
+
+.TitlesName p {
+    font-family: 'Seagram tfb';
+}
+.TitlesTitle p {
+    font-family: 'Commodore 64 Angled';
+}
+
+@media (max-width: 592px) {
+    .Titles p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 262px) {
+    .Titles p {
+        font-size: 10px;
+    }
+}
+.GoatTitle {
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+    font-family: 'Commodore 64 Angled';
+    font-size: 50px;
+    color: rgb(253, 254, 254);
+}
+@media (max-width: 768px) {
+    .GoatTitle {
+        font-size: 20px;
+    }
+}
+.GOAT {
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for the container */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: center; /* Center the wrapper within the GOAT container */
+    z-index: 9999;
+    font-family: 'Commodore 64 Angled';
+    font-size: 20px;
+    color: rgb(253, 254, 254);
+    width: 100%;
+}
+
+.music-players-wrapper {
+    display: flex; /* Make this a flex container */
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping to a new line */
+    justify-content: center; /* Center the items */
+}
+
+.music-player01, .music-player02, .music-player03 {
+    margin: 10px; /* Add some space between each music player */
+    text-align: center; /* Center the content inside each music player */
+    flex: 0 0 auto; /* Prevent them from stretching and allow them to take their natural width */
+}
+
+.GOAT img {
+    width: 300px;
+    height: auto;
+}
